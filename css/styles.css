@@ -411,9 +411,7 @@ header{
     background-color: #2F303A;    
 }
 
-.footer-section {
-    display: flex;
-    align-items: baseline;
+.footer-section {    
     width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -490,7 +488,7 @@ header{
     color: var(--white-text-color);    
 }
 
-.find-us-list {
+/* .find-us-list {
     display: flex;
 }
 
@@ -504,7 +502,7 @@ header{
 
 .find-us-link:hover, .find-us-link:focus {
     background-color: var(--accent-color);
-}
+} */
 /* Find us section end */
 
 /* Portfolio page common section start */
