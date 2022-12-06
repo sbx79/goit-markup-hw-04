@@ -9,7 +9,7 @@
     --secondary-background: #F5F4FA;
     --border-color:#ECECEC;
     --footer-contact-color: rgba(255, 255, 255, 0.6)
-      }
+}
 
 
 * {
@@ -91,17 +91,6 @@ header{
     margin-right: 97px;  
 }
 
-.footer-logo {
-    font-family: 'raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    margin-bottom: 9px;
-    display: block;  
-}
-
 .navigation-list {
     display: flex;
 }
@@ -148,6 +137,11 @@ header{
     line-height: calc(14/16);
     letter-spacing: 0.02em;
     color: var(--accent-color);
+}
+
+.header-contact-svg {
+    margin-right: 10px;
+    fill: currentColor;
 }
 /* Header common part end */
 
@@ -225,6 +219,14 @@ header{
 
 .features-item {
     width: 270px;
+}
+
+.features-image-svg {
+    background-color: rgba(245, 244, 250, 1);
+    padding: 25px 100px;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .features-title {
@@ -333,15 +335,85 @@ header{
     letter-spacing: 0.03em;
     color: #757575;
 }
+
+.social-media-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon-svg {
+    fill: currentColor;
+}
+
+.social-media-link {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AFB1B8;
+    border-radius: 50%;
+}
+
+.social-media-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-media-link:hover, .social-media-link:focus, .footer-social-media-link:hover, .footer-social-media-link:focus {
+    background-color: var(--accent-color);
+    color: white;
+}
 /* Our team section end */
+
+/* Regular customers section start */
+
+.regular-customers-title {
+    font-weight: 700;
+    text-align: center;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: var(--main-text-color);
+}
+
+.regular-customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.regular-customers-item {
+    width: 170px;
+}
+
+.regular-customers-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.regular-customers-link {
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.regular-customers-link:hover {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+}
+/* Regular customers section end */
 
 /* Footer section start */
 
 .website-footer {
-    background-color: #2F303A;
+    display: flex;
+    background-color: #2F303A;    
 }
 
 .footer-section {
+    display: flex;
+    align-items: baseline;
     width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -349,8 +421,19 @@ header{
     padding-right: 15px;
 }
 
-.footer-address {
+.footer-logo {
+    font-family: 'raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-bottom: 9px;
     display: block;
+}
+
+.footer-address {
+    display: flex;
     font-style: normal;
     color: var(--white-text-color);
 }
@@ -377,7 +460,52 @@ header{
 .footer-contact:hover, .foot-contact:focus {
     color: var(--accent-color);
 }
+
+.footer-social-media-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+}
 /* Footer section end */
+
+/* Find us section start */
+
+.find-us-container {
+   
+    margin-left: 70px;
+}
+
+.find-us-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: var(--white-text-color);    
+}
+
+.find-us-list {
+    display: flex;
+}
+
+.find-us-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.find-us-link {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.find-us-link:hover, .find-us-link:focus {
+    background-color: var(--accent-color);
+}
+/* Find us section end */
 
 /* Portfolio page common section start */
 
