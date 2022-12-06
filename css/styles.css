@@ -430,8 +430,7 @@ header{
     display: block;
 }
 
-.footer-address {
-    display: flex;
+.footer-address {    
     font-style: normal;
     color: var(--white-text-color);
 }
