@@ -439,8 +439,7 @@ header{
 }
 
 .footer-address {  
-    display: flex; 
-    width: 231px;
+    display: flex;     
     font-style: normal;
     color: var(--white-text-color);      
 }
@@ -448,8 +447,7 @@ header{
 .footer-address-link {
     font-weight: 400;
     font-size: 14px;
-    line-height: calc(24/14);
-    width: 231px;
+    line-height: calc(24/14);    
     margin-bottom: 2px;       
     color: var(--white-text-color);
 }
