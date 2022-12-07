@@ -124,6 +124,8 @@ header{
 }
 
 .contact-link {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(14/16);
@@ -151,10 +153,14 @@ header{
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
+    min-width: 1200px;
+    background-image: linear-gradient(rgba(47,48,58,0.4), rgba(47,48,58,0.4)), url(../images/studio/studio-background-image.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.solutions-our-specialty-flex {
-    background-color: #2F303A;
+.solutions-our-specialty-flex {    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +216,6 @@ header{
 .features-list {
     display: flex;
     justify-content: center;
-
 }
 
 .features-item:not(:last-child) {
@@ -334,6 +339,7 @@ header{
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 16px;
 }
 
 .social-media-list {
@@ -411,36 +417,41 @@ header{
     background-color: #2F303A;    
 }
 
-.footer-section {    
+.footer-section {
+    display: flex;    
+    align-items: baseline;
     width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;    
 }
 
 .footer-logo {
+    display: block;
     font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.03em;    
+    margin-bottom: 9px;   
     color: var(--accent-color);
-    margin-bottom: 9px;
-    display: block;
 }
 
-.footer-address {    
+.footer-address {  
+    display: flex; 
+    width: 231px;
     font-style: normal;
-    color: var(--white-text-color);
+    color: var(--white-text-color);      
 }
 
 .footer-address-link {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
+    width: 231px;
+    margin-bottom: 2px;       
     color: var(--white-text-color);
-    margin-bottom: 2px;    
 }
 
 .footer-addreess:hover, .footer-addreess:focus {
@@ -472,8 +483,7 @@ header{
 
 /* Find us section start */
 
-.find-us-container {
-   
+.find-us-container {   
     margin-left: 70px;
 }
 
@@ -486,22 +496,6 @@ header{
     text-transform: uppercase;
     color: var(--white-text-color);    
 }
-
-/* .find-us-list {
-    display: flex;
-}
-
-.find-us-item:not(:last-child) {
-    margin-right: 10px;
-}
-
-.find-us-link {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.find-us-link:hover, .find-us-link:focus {
-    background-color: var(--accent-color);
-} */
 /* Find us section end */
 
 /* Portfolio page common section start */
